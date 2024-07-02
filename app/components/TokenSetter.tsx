@@ -8,6 +8,7 @@ export default function TokenSetter() {
   const handleSetToken = () => {
     const value = inputRef.current?.value || "token-value-from-dot-vam-domain";
     setCookie("token", value, { domain: "adriantdc.com" });
+    //setCookie("token", value);
   };
   return (
     <div className='flex gap-2'>
